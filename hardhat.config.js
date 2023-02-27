@@ -11,8 +11,8 @@ require("hardhat-deploy")
  */
 
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
-const GOERLI_RPC_URL =
-    process.env.GOERLI_RPC_URL ||
+const FUJI_RPC_URL =
+    process.env.FUJI_RPC_URL ||
     "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
 const PRIVATE_KEY =
     process.env.PRIVATE_KEY ||
@@ -26,10 +26,10 @@ module.exports = {
             chainId: 31337,
             // gasPrice: 130000000000,
         },
-        goerli: {
-            url: GOERLI_RPC_URL,
+        fuji: {
+            url: FUJI_RPC_URL,
             accounts: [PRIVATE_KEY],
-            chainId: 5,
+            chainId: 43113,
             blockConfirmations: 6,
         },
     },
@@ -46,7 +46,6 @@ module.exports = {
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
         // customChains: [], // uncomment this line if you are getting a TypeError: customChains is not iterable
-
     },
     gasReporter: {
         enabled: true,

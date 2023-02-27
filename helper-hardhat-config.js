@@ -3,9 +3,9 @@ const networkConfig = {
         name: "localhost",
     },
     // Price Feed Address, values can be obtained at https://docs.chain.link/docs/reference-contracts
-    5: {
-        name: "goerli",
-        ethUsdPriceFeed: "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e",
+    43113: {
+        name: "fuji",
+        avaxUsdPriceFeed: "0x5498BB86BC934c8D34FDA08E81D444153d0D06aD",
     },
 }
 
